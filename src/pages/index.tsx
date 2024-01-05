@@ -35,7 +35,7 @@ export default function Home() {
 
   return (
     <main
-      className={`flex min-h-screen flex-row bg-gradient-to-b from-green-200 to-green-200`}
+      className={`flex min-h-screen flex-row bg-gradient-to-b from-green-200 to-green-200 relative`}
     >
       <div className='w-full sm:w-1/2 min-h-screen flex items-center sm:items-start justify-around flex-col gap-10 px-4 py-10 sm:py-0 sm:px-32'>
         <img className='w-[200px]' src="/golektruk.svg" alt="" />
