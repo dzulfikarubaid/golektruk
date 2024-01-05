@@ -14,9 +14,12 @@ interface TableProps {
   data: AllData,
 
 }
-
-const Table: React.FC<TableProps> = ({ data }) => {
+const Table = ({ data }: TableProps) => {
   const tableRef = useRef(null);
+
+  if (data == null) {
+    return null;
+  }
 
   const uniqueDates = Object.keys(data).sort();
 
@@ -34,9 +37,9 @@ const Table: React.FC<TableProps> = ({ data }) => {
           sheet="analytics"
           currentTableRef={tableRef.current}
         >
-
           <button className='rounded-xl p-2 px-3 bg-green-500 hover:bg-green-600 text-white mb-4'>Export</button>
-        </DownloadTableExcel></div>
+        </DownloadTableExcel>
+      </div>
       <div className="overflow-x-auto">
         <table ref={tableRef} className="table-auto min-w-full text-center ">
           <thead>
@@ -46,7 +49,6 @@ const Table: React.FC<TableProps> = ({ data }) => {
               {uniqueDates.map(date => (
                 <th key={date} className="border border-black p-2 bg-green-50">{formatDay(date)}</th>
               ))}
-
             </tr>
           </thead>
           <tbody>
@@ -54,21 +56,19 @@ const Table: React.FC<TableProps> = ({ data }) => {
               <tr key={scope}>
                 <td className="border px-2 border-black">{scope}</td>
                 <td className="border px-2 border-black">
-                  {uniqueDates.reduce((total, date) => total + (data[date].find(item => item.scope === scope)?.count || 0), 0)}
+                  {uniqueDates.reduce((total, date) => total + (data[date]?.find(item => item.scope === scope)?.count || 0), 0)}
                 </td>
                 {uniqueDates.map(date => (
                   <td key={date} className="border border-black px-2 ">
-                    {(data[date].find(item => item.scope === scope)?.count) || 0}
+                    {(data[date]?.find(item => item.scope === scope)?.count) || 0}
                   </td>
                 ))}
-
               </tr>
             ))}
           </tbody>
         </table>
       </div>
     </>
-
   );
 };
 

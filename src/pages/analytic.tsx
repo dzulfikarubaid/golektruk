@@ -2,13 +2,10 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 import React, { useEffect, useRef, useState } from 'react'
 import Table from './table';
-import { BiCalendar, BiExport } from 'react-icons/bi';
 import Datepicker from "react-tailwindcss-datepicker";
-import { DownloadTableExcel } from 'react-export-table-to-excel';
+
 function Analytic() {
   const [userData, setUserData] = useState<any>({});
-   const tableRef = useRef(null);
-
   useEffect(() => {
     setTimeout(() => {
       setView(true);
