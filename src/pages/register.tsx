@@ -184,7 +184,7 @@ function Register() {
         <p className='text-lg text-black font-light sm:text-left text-center'>Jadilah bagian dari kami</p>
         </div>
          <div className='flex flex-col-reverse sm:flex-row w-full p-4 sm:p-0 justify-between gap-6 items-center text-gray-500 bg-white sm:bg-transparent absolute bottom-0 right-0 sm:relative'>
-       <h1>© 2024 dzulfikarubaid. All rights reserved.</h1>
+       <h1 className='sm:text-sm'>© 2024 dzulfikarubaid. All rights reserved.</h1>
        <div className='flex flex-row gap-2'>
        <Link target='_blank' href="https://id.linkedin.com/in/ahmad-dzulfikar-ubaidillah-1b7b59215" className='text-xl'><BiLogoLinkedin></BiLogoLinkedin></Link>
        <Link target='_blank' href="https://www.instagram.com/dzulfikarubaid/" className='text-xl'><BiLogoInstagramAlt></BiLogoInstagramAlt></Link>

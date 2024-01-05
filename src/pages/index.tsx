@@ -39,7 +39,7 @@ export default function Home() {
     >
       <div className='w-full sm:w-1/2 min-h-screen flex items-center sm:items-start justify-around flex-col gap-10 px-4 py-10 sm:py-0 sm:px-32'>
         <img className='w-[200px]' src="/golektruk.svg" alt="" />
-         <div className='sm:hidden rounded-3xl p-10 flex flex-col items-center justify-center w-full gap-2 border-[1px] bg-white'>
+        <div className='sm:hidden rounded-3xl p-10 flex flex-col items-center justify-center w-full gap-2 border-[1px] bg-white'>
           <h1 className='text-2xl font-semibold mb-4'>Sign In</h1>
 
           <div className='flex flex-col gap-2 w-full'>
@@ -76,18 +76,19 @@ export default function Home() {
           </div>
         </div>
         <div className='flex flex-col gap-4 mb-24 sm:mb-0'>
-        <h1 className='text-4xl text-center sm:text-left'>Tumbuh dan bertahan bersama GolekTruk</h1>
-        <p className='text-lg text-black font-light sm:text-left text-center'>Masuk dan jelajahi semua fitur kami</p>
+          <h1 className='text-4xl text-center sm:text-left'>Tumbuh dan bertahan bersama GolekTruk</h1>
+          <p className='text-lg text-black font-light sm:text-left text-center'>Masuk dan jelajahi semua fitur kami</p>
         </div>
-         <div className='flex flex-col-reverse sm:flex-row w-full p-4 sm:p-0 justify-between gap-6 items-center text-gray-500 bg-white sm:bg-transparent absolute bottom-0 right-0 sm:relative'>
-       <h1>© 2024 dzulfikarubaid. All rights reserved.</h1>
-       <div className='flex flex-row gap-2'>
-       <Link target='_blank' href="https://id.linkedin.com/in/ahmad-dzulfikar-ubaidillah-1b7b59215" className='text-xl'><BiLogoLinkedin></BiLogoLinkedin></Link>
-       <Link target='_blank' href="https://www.instagram.com/dzulfikarubaid/" className='text-xl'><BiLogoInstagramAlt></BiLogoInstagramAlt></Link>
-       <Link target='_blank' href="https://github.com/dzulfikarubaid" className='text-xl'><BiLogoGithub></BiLogoGithub></Link>
-       </div>
+
+        <div className='flex flex-col-reverse sm:flex-row w-full p-4 sm:p-0 justify-between gap-6 items-center text-gray-500 bg-white sm:bg-transparent absolute bottom-0 right-0 sm:relative'>
+          <h1 className='sm:text-sm'>© 2024 dzulfikarubaid. All rights reserved.</h1>
+          <div className='flex flex-row gap-2'>
+            <Link target='_blank' href="https://id.linkedin.com/in/ahmad-dzulfikar-ubaidillah-1b7b59215" className='text-xl'><BiLogoLinkedin></BiLogoLinkedin></Link>
+            <Link target='_blank' href="https://www.instagram.com/dzulfikarubaid/" className='text-xl'><BiLogoInstagramAlt></BiLogoInstagramAlt></Link>
+            <Link target='_blank' href="https://github.com/dzulfikarubaid" className='text-xl'><BiLogoGithub></BiLogoGithub></Link>
+          </div>
         </div>
-        </div>
+      </div>
 
       <div className='w-1/2 bg-white rounded-l-3xl p-12 justify-center items-center sm:flex hidden'>
         <div className='rounded-3xl p-10 flex flex-col items-center justify-center w-3/4 gap-2 border-[1px] bg-gradient-to-br from-green-200/20 to-transparent'>
