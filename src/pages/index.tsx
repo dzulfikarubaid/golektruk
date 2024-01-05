@@ -3,6 +3,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import { BiLogoLinkedin, BiLogoInstagramAlt, BiLogoGithub } from 'react-icons/bi';
+import Link from 'next/link';
 
 const fontInter = Inter({ subsets: ['latin'] });
 
@@ -71,7 +72,7 @@ export default function Home() {
 
           <div className='flex flex-row gap-2 w-full items-center justify-center'>
             <h1>Belum punya akun? </h1>
-            <a className='text-green-600' href="/register">Sign Up</a>
+            <Link className='text-green-600' href="/register">Sign Up</Link>
           </div>
         </div>
         <div className='flex flex-col gap-4 mb-24 sm:mb-0'>
@@ -81,9 +82,9 @@ export default function Home() {
          <div className='flex flex-col-reverse sm:flex-row w-full p-4 sm:p-0 justify-between gap-6 items-center text-gray-500 bg-white sm:bg-transparent absolute bottom-0 right-0 sm:relative'>
        <h1>© 2024 dzulfikarubaid. All rights reserved.</h1>
        <div className='flex flex-row gap-2'>
-       <a href="" className='text-xl'><BiLogoLinkedin></BiLogoLinkedin></a>
-       <a href="" className='text-xl'><BiLogoInstagramAlt></BiLogoInstagramAlt></a>
-       <a href="" className='text-xl'><BiLogoGithub></BiLogoGithub></a>
+       <Link target='_blank' href="https://id.linkedin.com/in/ahmad-dzulfikar-ubaidillah-1b7b59215" className='text-xl'><BiLogoLinkedin></BiLogoLinkedin></Link>
+       <Link target='_blank' href="https://www.instagram.com/dzulfikarubaid/" className='text-xl'><BiLogoInstagramAlt></BiLogoInstagramAlt></Link>
+       <Link target='_blank' href="https://github.com/dzulfikarubaid" className='text-xl'><BiLogoGithub></BiLogoGithub></Link>
        </div>
         </div>
         </div>
@@ -122,7 +123,7 @@ export default function Home() {
 
           <div className='flex flex-row gap-2 w-full items-center justify-center'>
             <h1>Belum punya akun? </h1>
-            <a className='text-green-600' href="/register">Sign Up</a>
+            <Link className='text-green-600' href="/register">Sign Up</Link>
           </div>
         </div>
       </div>

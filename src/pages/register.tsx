@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { Inter } from 'next/font/google';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react'
 import {BiLogoGithub, BiLogoInstagram, BiLogoInstagramAlt, BiLogoLinkedin} from 'react-icons/bi'
@@ -176,7 +177,7 @@ function Register() {
             <button onClick={handleSubmit} className='bg-green-500 hover:bg-green-600 text-white border-[1px] rounded-xl px-2 py-1 focus:outline-none w-full mt-2'>Sign Up</button>
              <div className='flex flex-row gap-2 w-full items-center  justify-center'>
                 <h1>Sudah punya akun? </h1>
-                <a className='text-green-600' href="/">Sign In</a></div>
+                <Link className='text-green-600' href="/">Sign In</Link></div>
         </div>
         <div className='flex flex-col gap-4 mb-24 sm:mb-0'>
         <h1 className='text-4xl text-center sm:text-left'>Tumbuh dan bertahan bersama GolekTruk</h1>
@@ -185,9 +186,9 @@ function Register() {
          <div className='flex flex-col-reverse sm:flex-row w-full p-4 sm:p-0 justify-between gap-6 items-center text-gray-500 bg-white sm:bg-transparent absolute bottom-0 right-0 sm:relative'>
        <h1>© 2024 dzulfikarubaid. All rights reserved.</h1>
        <div className='flex flex-row gap-2'>
-       <a href="" className='text-xl'><BiLogoLinkedin></BiLogoLinkedin></a>
-       <a href="" className='text-xl'><BiLogoInstagramAlt></BiLogoInstagramAlt></a>
-       <a href="" className='text-xl'><BiLogoGithub></BiLogoGithub></a>
+       <Link target='_blank' href="https://id.linkedin.com/in/ahmad-dzulfikar-ubaidillah-1b7b59215" className='text-xl'><BiLogoLinkedin></BiLogoLinkedin></Link>
+       <Link target='_blank' href="https://www.instagram.com/dzulfikarubaid/" className='text-xl'><BiLogoInstagramAlt></BiLogoInstagramAlt></Link>
+       <Link target='_blank' href="https://github.com/dzulfikarubaid" className='text-xl'><BiLogoGithub></BiLogoGithub></Link>
        </div>
         </div>
         </div>
@@ -285,7 +286,7 @@ function Register() {
             <button onClick={handleSubmit} className='bg-green-500 hover:bg-green-600 text-white border-[1px] rounded-xl px-2 py-1 focus:outline-none w-full mt-2'>Sign Up</button>
              <div className='flex flex-row gap-2 w-full items-center justify-center'>
                 <h1>Sudah punya akun? </h1>
-                <a className='text-green-600' href="/">Sign In</a></div>
+                <Link className='text-green-600' href="/">Sign In</Link></div>
         </div>
         
         </div>
