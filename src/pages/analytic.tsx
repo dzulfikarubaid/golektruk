@@ -139,7 +139,7 @@ function Analytic() {
               toggleClassName="absolute  rounded-r-lg text-black right-0 h-full px-3 focus:outline-none disabled:opacity-40 disabled:cursor-not-allowed" 
             
             ></Datepicker>
-            <button className='rounded-xl p-2 px-3 hover:bg-green-600   bg-green-500 text-white' onClick={() => handleGenerate(value.startDate, value.endDate)}>Generate</button>
+            <button className='rounded-xl p-2 px-3 hover:bg-green-600   bg-green-500 text-white' onClick={() => handleGenerate(value.startDate, value.endDate)}>Get Data</button>
             </div>
            
           </div>
